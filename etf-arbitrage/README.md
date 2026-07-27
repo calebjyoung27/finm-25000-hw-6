@@ -4,13 +4,13 @@
 
 ## Data
 
-Needs `data/etf_arb_data.xlsx` (tabs `descriptions`, `prices`, `nav`; tickers SPY, HYG, GBTC). This file is **not** in the course Box data folder — download it and drop it in `./data/`. Without it, the arbitrage arithmetic (1.2, 1.3) still runs on a placeholder NAV; the data-driven stats and plots (1.1, 2.1) light up once the file is present.
+`data/etf_arb_data.xlsx` (tabs `descriptions`, `prices`, `nav`; tickers SPY, HYG, GBTC), Bloomberg-sourced. Not in the shared course Box data folder (rolling-vintage file) — included here directly. Without it, the arbitrage arithmetic (1.2, 1.3) falls back to a placeholder NAV; with it, all cells run on real data.
 
 ## Contents
 
-**1. The SPY premium** — 1.1 daily premium/discount, SPY summary in bps + time series; 1.2 the AP creation trade at a 0.50% premium on one 50,000-share creation unit; 1.3 breakeven premium under a $3,000 creation fee + 3 bps trading cost, and why SPY stays pinned to NAV.
+**1. The SPY premium** — 1.1 daily premium/discount, SPY summary in bps + time series (mean **0.30 bps**, std **4.23 bps**, range **−79.8 to +90.0 bps**); 1.2 the AP creation trade at a 0.50% premium on one 50,000-share creation unit (NAV ≈ $737, gross profit ≈ $184k); 1.3 breakeven premium ≈ **3.8 bps** under a $3,000 creation fee + 3 bps trading cost — on the same order as SPY's own std dev, so only stress-day dislocations clear it.
 
-**2. HYG in March 2020** — 2.1 HYG premium/discount through 2020 with the deepest discount / largest premium and dates; 2.2 the redemption trade and why the discount was not free money; 2.3 whether price or NAV was the accurate signal, and what April 2020 shows.
+**2. HYG in March 2020** — 2.1 HYG premium/discount through 2020: deepest discount **−127.4 bps on 2020-03-20**, largest premium **+458.4 bps on 2020-04-09**; 2.2 the redemption trade and why the discount was not free money; 2.3 whether price or NAV was the accurate signal, and what April 2020 shows.
 
 ## Run
 
